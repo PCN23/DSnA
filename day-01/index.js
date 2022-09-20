@@ -13,7 +13,7 @@ function addPunctuation(punctuation) {
 
 function titleCase(sentence) {
   return sentence
-    .split(' ')
+    .slice(' ')
     .map((word) => word.split('').toUpperCase().join(''))
     .join(' ');
 
