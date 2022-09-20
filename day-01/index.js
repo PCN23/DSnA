@@ -8,11 +8,10 @@ function reverseSentence(str) {
 function addPunctuation(punctuation) {
   return function result(string) {
     return string + punctuation
-  }
+  };
 }
 
 function titleCase(sentence) {
-  console.log(sentence);
   return sentence
     .split(' ')
     .map((word) => word[0].toUpperCase() + word.slice(1).toLowerCase())
@@ -35,7 +34,7 @@ function fizzBuzz(num) {
     } else if (index % 5 === 0) {
       array.push('Buzz');
     } else array.push(index)
-  }
+  };
   return array;
 }
 
