@@ -1,4 +1,4 @@
-const { reverseSentence, addPunctuation, titleCase, oddEvenish } = require('./index');
+const { reverseSentence, addPunctuation, titleCase, oddEvenish, fizzBuzz } = require('./index');
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
@@ -19,6 +19,16 @@ describe('primitive code challenges', () => {
       expect(oddEvenish('121')).toEqual('Evenish');
       expect(oddEvenish('41')).toEqual('Oddish');
     });
+
+    it('fizzbuzz function working', () => {
+      const array = [
+        1, 2, 'Fizz', 4, 'Buzz',
+        'Fizz', 7, 8, 'Fizz', 'Buzz',
+        11, 'Fizz', 13, 14, 'FizzBuzz',
+        16
+      ];
+      expect(fizzBuzz('16')).toEqual(array);
+    })
 
   });
   
