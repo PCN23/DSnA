@@ -1,4 +1,4 @@
-const { reverseSentence, addPunctuation } = require('./index');
+const { reverseSentence, addPunctuation, titleCase } = require('./index');
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
@@ -10,6 +10,10 @@ describe('primitive code challenges', () => {
       const addExcitement = addPunctuation('!!!');
       expect(addExcitement('Hello World')).toBe('Hello World!!!');
     });
+
+    it('should capitalize first letting in word', () => {
+      expect(titleCase('alchemy ROCKS goLD')).toBe('Alchemy Rocks Gold');
+    })
 
   });
   

@@ -11,4 +11,12 @@ function addPunctuation(punctuation) {
   }
 }
 
-module.exports = { reverseSentence, addPunctuation };
+function titleCase(sentence) {
+  return sentence
+    .split(' ')
+    .map((word) => word.split('').toUpperCase().join(''))
+    .join(' ');
+
+}
+
+module.exports = { reverseSentence, addPunctuation, titleCase };
