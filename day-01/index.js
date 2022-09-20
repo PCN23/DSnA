@@ -48,4 +48,13 @@ function multiples(number) {
   return array;
 }
 
-module.exports = { reverseSentence, addPunctuation, titleCase, oddEvenish, fizzBuzz, multiples };
+function rootDigit(number) {
+  const digits = number.toString().split('');
+  const numbers = digits.map(d => +d);
+  const sum = numbers.reduce((a, b) => a + b);
+
+  return String(sum).split('').length === 1 ? sum : rootDigit(sum);
+
+}
+
+module.exports = { reverseSentence, addPunctuation, titleCase, oddEvenish, fizzBuzz, multiples, rootDigit };

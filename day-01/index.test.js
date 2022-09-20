@@ -1,4 +1,4 @@
-const { reverseSentence, addPunctuation, titleCase, oddEvenish, fizzBuzz, multiples } = require('./index');
+const { reverseSentence, addPunctuation, titleCase, oddEvenish, fizzBuzz, multiples, rootDigit } = require('./index');
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
@@ -32,6 +32,10 @@ describe('primitive code challenges', () => {
 
     it('numbers from 1 to 50 that are multiples', () => {
       expect(multiples(5)).toEqual([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
+    });
+
+    it('should return a sum of single digit numbers', () => {
+      expect(rootDigit('123')).toEqual(6);
     });
 
   });
