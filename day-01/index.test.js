@@ -1,4 +1,4 @@
-const { reverseSentence, addPunctuation, titleCase } = require('./index');
+const { reverseSentence, addPunctuation, titleCase, oddEvenish } = require('./index');
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
@@ -13,7 +13,12 @@ describe('primitive code challenges', () => {
 
     it('should capitalize first letting in word', () => {
       expect(titleCase('alchemy ROCKS goLD')).toBe('Alchemy Rocks Gold');
-    })
+    });
+
+    it('should return oddish or evenish number', () => {
+      expect(oddEvenish('121')).toEqual('Evenish');
+      expect(oddEvenish('41')).toEqual('Oddish');
+    });
 
   });
   
