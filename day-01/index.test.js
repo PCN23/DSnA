@@ -1,4 +1,4 @@
-const { reverseSentence, addPunctuation, titleCase, oddEvenish, fizzBuzz, multiples, rootDigit } = require('./index');
+const { reverseSentence, addPunctuation, titleCase, oddEvenish, fizzBuzz, multiples, rootDigit, anagrams } = require('./index');
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
@@ -28,6 +28,11 @@ describe('primitive code challenges', () => {
         16
       ];
       expect(fizzBuzz('16')).toEqual(array);
+    });
+
+    it('takes 2 words as arguments and returns is true if anagrams and false otherwise', () => {
+      expect(anagrams('superintended', 'unpredestined')).toBe(true);
+      expect(anagrams('pictorialness', 'documentarily')).toBe(false);
     });
 
     it('numbers from 1 to 50 that are multiples', () => {

@@ -38,6 +38,29 @@ function fizzBuzz(num) {
   return array;
 }
 
+function anagrams(wordOne, wordTwo) {
+  const lengthOne = wordOne.length;
+  const lengthTwo = wordTwo.length;
+  if (lengthOne !== lengthTwo) {
+    return 'invalid';
+  }
+
+  const arrOne = wordOne
+    .split('')
+    .sort()
+    .join('');
+  const arrTwo = wordTwo
+    .split('')
+    .sort()
+    .join('');
+  
+  if (arrOne === arrTwo) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 function multiples(number) {
   const array = [];
   if (number >= 50) return array;
@@ -56,4 +79,4 @@ function rootDigit(number) {
 
 }
 
-module.exports = { reverseSentence, addPunctuation, titleCase, oddEvenish, fizzBuzz, multiples, rootDigit };
+module.exports = { reverseSentence, addPunctuation, titleCase, oddEvenish, fizzBuzz, multiples, rootDigit, anagrams };
