@@ -7,7 +7,7 @@ function reverseSentence(str) {
 
 function addPunctuation(punctuation) {
   return function result(string) {
-    return string + punctuation
+    return string + punctuation;
   };
 }
 
@@ -33,8 +33,8 @@ function fizzBuzz(num) {
       array.push('Fizz');
     } else if (index % 5 === 0) {
       array.push('Buzz');
-    } else array.push(index)
-  };
+    } else array.push(index);
+  }
   return array;
 }
 
