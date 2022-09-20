@@ -39,4 +39,13 @@ function fizzBuzz(num) {
   return array;
 }
 
-module.exports = { reverseSentence, addPunctuation, titleCase, oddEvenish, fizzBuzz };
+function multiples(number) {
+  const array = [];
+  if (number >= 50) return array;
+  for (let index = 1; index <= 50; index++) {
+    if (index % number === 0) array.push(index);
+  }
+  return array;
+}
+
+module.exports = { reverseSentence, addPunctuation, titleCase, oddEvenish, fizzBuzz, multiples };

@@ -1,4 +1,4 @@
-const { reverseSentence, addPunctuation, titleCase, oddEvenish, fizzBuzz } = require('./index');
+const { reverseSentence, addPunctuation, titleCase, oddEvenish, fizzBuzz, multiples } = require('./index');
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
@@ -28,7 +28,11 @@ describe('primitive code challenges', () => {
         16
       ];
       expect(fizzBuzz('16')).toEqual(array);
-    })
+    });
+
+    it('numbers from 1 to 50 that are multiples', () => {
+      expect(multiples(5)).toEqual([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
+    });
 
   });
   
