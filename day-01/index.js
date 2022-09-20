@@ -4,4 +4,11 @@ function reverseSentence(str) {
     .map((word) => word.split('').reverse().join(''))
     .join(' ');
 }
-module.exports = { reverseSentence };
+
+function addPunctuation(punctuation) {
+  return function result(string) {
+    return string + punctuation
+  }
+}
+
+module.exports = { reverseSentence, addPunctuation };
