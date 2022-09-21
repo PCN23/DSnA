@@ -2,25 +2,25 @@ const { reverseSentence, addPunctuation, titleCase, oddEvenish, fizzBuzz, multip
 
 describe('primitive code challenges', () => {
   describe('reverseSentence', () => {
-    it('should reverse a sentence', () => {
+    it.skip('should reverse a sentence', () => {
       expect(reverseSentence('alchemy rocks gold')).toBe('ymehcla skcor dlog');
     });
     
-    it('should return a string plus punctuation', () => {
+    it.skip('should return a string plus punctuation', () => {
       const addExcitement = addPunctuation('!!!');
       expect(addExcitement('Hello World')).toBe('Hello World!!!');
     });
 
-    it('should capitalize first letting in word', () => {
+    it.skip('should capitalize first letting in word', () => {
       expect(titleCase('alchemy ROCKS goLD')).toBe('Alchemy Rocks Gold');
     });
 
-    it('should return oddish or evenish number', () => {
+    it.skip('should return oddish or evenish number', () => {
       expect(oddEvenish('121')).toEqual('Evenish');
       expect(oddEvenish('41')).toEqual('Oddish');
     });
 
-    it('fizzbuzz function working', () => {
+    it.skip('fizzbuzz function working', () => {
       const array = [
         1, 2, 'Fizz', 4, 'Buzz',
         'Fizz', 7, 8, 'Fizz', 'Buzz',
@@ -30,16 +30,16 @@ describe('primitive code challenges', () => {
       expect(fizzBuzz('16')).toEqual(array);
     });
 
-    it('takes 2 words as arguments and returns is true if anagrams and false otherwise', () => {
+    it.skip('takes 2 words as arguments and returns is true if anagrams and false otherwise', () => {
       expect(anagrams('superintended', 'unpredestined')).toBe(true);
       expect(anagrams('pictorialness', 'documentarily')).toBe(false);
     });
 
-    it('numbers from 1 to 50 that are multiples', () => {
+    it.skip('numbers from 1 to 50 that are multiples', () => {
       expect(multiples(5)).toEqual([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
     });
 
-    it('should return a sum of single digit numbers', () => {
+    it.skip('should return a sum of single digit numbers', () => {
       expect(rootDigit('123')).toEqual(6);
     });
 
