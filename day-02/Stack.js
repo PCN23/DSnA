@@ -1,25 +1,25 @@
 class Stack {
-#list = [];
+  #list = [];
 
-constructor(firstList) {
+  constructor(firstList) {
     if(firstList);
     this.#list = firstList;
-}
-push(item) {
+  }
+  push(item) {
     this.#list.push(item);
-}
+  }
 
-pop() {
+  pop() {
     this.#list.pop();
-}
+  }
 
-peek() {
+  peek() {
     return this.#list[this.#list.length - 1];
-}
+  }
 
-get arrayNow() {
+  get arrayNow() {
     return this.#list;
-}
+  }
 }
 
 module.exports = { Stack };

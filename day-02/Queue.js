@@ -1,20 +1,20 @@
 class Queue {
-#list = [];
-constructor(initialList) {
+  #list = [];
+  constructor(initialList) {
     if (initialList) this.#list = initialList; 
-}
-enqueue(item) {
+  }
+  enqueue(item) {
     this.#list.push(item);
-}
-dequeue() {
+  }
+  dequeue() {
     this.#list.shift();
-}
-hasNext() {
+  }
+  hasNext() {
     return this.#list.length ? true : false;
-}
-get arrayNow() {
+  }
+  get arrayNow() {
     return this.#list;
-}
+  }
 }
 
 module.exports = { Queue };

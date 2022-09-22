@@ -22,5 +22,12 @@
     "cSpell.words": [
         "pictorialness",
         "unpredestined"
-    ]
+    ],
+    "editor.codeActionsOnSave": {
+    
+    },
+    "files.autoSave": "afterDelay",
+    "eslint.alwaysShowStatus": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "eslint.codeActionsOnSave.rules": null
 }

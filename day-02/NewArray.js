@@ -1,17 +1,17 @@
 class NewArray {
-#list = [];
+  #list = [];
 
-constructor(firstList) {
+  constructor(firstList) {
     if (firstList) this.#list = firstList;
-}
+  }
 
-reverse() {
+  reverse() {
     this.#list.reverse();
-}
+  }
 
-get arrayNow() {
+  get arrayNow() {
     return this.#list;
-}
+  }
 }
 
 module.exports = { NewArray };
