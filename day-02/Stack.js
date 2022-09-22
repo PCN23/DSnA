@@ -1,3 +1,17 @@
-class Stack {}
+class Stack {
+    #list = [];
+
+    constructor(firstList) {
+        if(firstList);
+        this.#list = firstList;
+    }
+    push(item) {
+        this.#list.push(item);
+    }
+
+    get arrayNow() {
+        return this.#list;
+    }
+}
 
 module.exports = { Stack };
