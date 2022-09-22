@@ -10,8 +10,10 @@ describe('queue', () => {
   });
     
     it('should remove an item from front of list', () => {
-        const array = new Queue([])
-    })
+        const array = new Queue(['fox', 'goose', 'lizard']);
+        array.dequeue();
+        expect(array.arrayNow).toEqual(['goose', 'lizard']);
+    });
     
     
 });
