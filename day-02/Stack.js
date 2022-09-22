@@ -13,6 +13,10 @@ class Stack {
         this.#list.pop();
     }
 
+    peek() {
+        return this.#list[this.#list.length - 1];
+    }
+
     get arrayNow() {
         return this.#list;
     }

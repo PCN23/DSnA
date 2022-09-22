@@ -13,6 +13,10 @@ describe('stack', () => {
         const array = new Stack(['fox', 'goose', 'lizard']);
         array.pop();
         expect(array.arrayNow).toEqual(['fox', 'goose']);
+    });
 
-    })
+    it('should peek return item in array', () => {
+        const peekList = new Stack(['fox', 'goose', 'lizard']);
+        expect(peekList.peek()).toEqual('lizard');
+    });
 });
