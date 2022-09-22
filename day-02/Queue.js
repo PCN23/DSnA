@@ -7,10 +7,13 @@ class Queue {
         this.#list.push(item);
     }
     dequeue() {
-        this.#list = this.#list.slice(1);
+        this.#list.shift();
     }
     hasNext() {
         return this.#list.length ? true : false;
+    }
+    get arrayNow() {
+        return this.#list;
     }
 }
 
