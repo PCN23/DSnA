@@ -14,6 +14,13 @@ describe('queue', () => {
         array.dequeue();
         expect(array.arrayNow).toEqual(['goose', 'lizard']);
     });
+
+    it('should return true or false', () => {
+        const exits = new Queue(['goose', 'lizard']);
+        const exitsNot = new Queue([]);
+        expect(exits.hasNext()).toEqual(true);
+        expect(exitsNot.hasNext()).toEqual(false);
+    })
     
     
 });
