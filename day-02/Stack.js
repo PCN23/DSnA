@@ -9,6 +9,10 @@ class Stack {
         this.#list.push(item);
     }
 
+    pop() {
+        this.#list.pop();
+    }
+
     get arrayNow() {
         return this.#list;
     }

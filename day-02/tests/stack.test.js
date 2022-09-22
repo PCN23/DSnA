@@ -8,4 +8,11 @@ describe('stack', () => {
     array.push('lizard');
     expect(array.arrayNow).toEqual(['fox', 'goose', 'lizard']);
   });
+    
+    it('should pop and return array without last item on list', () => {
+        const array = new Stack(['fox', 'goose', 'lizard']);
+        array.pop();
+        expect(array.arrayNow).toEqual(['fox', 'goose']);
+
+    })
 });
